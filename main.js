@@ -7,17 +7,22 @@ const botoes = document.querySelectorAll('.parametro-senha__botao');
 botoes[0].onclick = diminuiTamanho;
 botoes[1].onclick = aumentaTamanho;
 
-function diminuiTamanho() {
-    if (tamanhoSenha > i) {
+function diminuiTamanho(){
+    if(tamanhoSenha > 1){
         tamanhoSenha = tamanhoSenha - 1
     }
-numeroSenha, textcontent = tamanhoSenha;
-}function aumentaTamanhoTamanho() {
-    if (tamanhoSenha > i) {
-        tamanhoSenha = tamanhoSenha - 1
-    }
-numeroSenha, textcontent = tamanhoSenha;
+    numeroSenha.textContent=tamanhoSenha;
+    geraSenha();
 }
+
+function aumentaTamanho(){
+    if(tamanhoSenha < 20){
+        tamanhoSenha = tamanhoSenha + 1
+    }
+    numeroSenha.textContent=tamanhoSenha;
+    geraSenha();
+}
+
 
 
 
