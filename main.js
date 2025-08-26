@@ -32,8 +32,8 @@ for (i=0; i< checkbox.length; i++) {
 
 const letrasMaiúsculas = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 const letrasMinúsculas = 'abcdefghijklmnopqrstuvwxyz';
-const Números = '0123456789';
-const Símbolos = '#@!?_$%*';
+const numeros = '0123456789';
+const simbolos = '#@!?_$%*';
 geraSenha();
 
 function geraSenha() {
@@ -47,11 +47,11 @@ function geraSenha() {
     }
 
     if (checkbox[2].checkbox) {
-        alfabeto = alfabeto + Números;
+        alfabeto = alfabeto + numeros;
     }
 
     if (checkbox[3].checkbox) {
-        alfabeto = alfabeto + Símbolos;
+        alfabeto = alfabeto + simbolos;
     }
 
     let senha = '';
