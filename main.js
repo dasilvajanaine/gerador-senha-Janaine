@@ -23,7 +23,7 @@ function aumentaTamanho() {
     geraSenha();
 }
 
-const camposenha = document.querySelector('#camnposenha');
+const campoSenha = document.querySelector('#campo-senha');
 
 const letrasMaiúsculas = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 const letrasMinúsculas = 'abcdefghijklmnopqrstuvwxyz';
@@ -38,10 +38,7 @@ function geraSenha() {
         numeroAleatorio = Math.floor(numeroAleatorio);
         senha = senha + letrasMaiúsculas[numeroAleatorio];
     }
-
-    camposenha.value = senha;
-
-
+    campoSenha.value = senha;
 }
 
 
