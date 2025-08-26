@@ -30,8 +30,6 @@ for (i=0; i<checkbox.length; i++){
     checkbox[i]. onclick = geraSenha;
 }
 
-
-
 const letrasMaiúsculas = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 const letrasMinúsculas = 'abcdefghijklmnopqrstuvwxyz';
 const Números = '0123456789';
@@ -60,7 +58,7 @@ function geraSenha() {
     for (let i = 0; i < tamanhoSenha; i++) {
         let numeroAleatorio = Math.random() * alfabeto.length;
         numeroAleatorio = Math.floor(numeroAleatorio);
-        senha = senha + alfabeto[numeroAleatorio];
+        senha = senha + alfabeto [numeroAleatorio];
     }
     campoSenha.value = senha;
 }
