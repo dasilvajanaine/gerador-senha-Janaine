@@ -34,12 +34,12 @@ geraSenha();
 function geraSenha() {
     let senha = '';
     for (let i = 0; i < tamanhoSenha; i++) {
-        let númerosAleatorios = Math.random() * letrasMaiúsculas.length;
+        let numeroAleatorio = Math.random() * letrasMaiúsculas.length;
         numeroAleatorio = Math.floor(numeroAleatorio);
-        senha = senha + letrasMaiúsculas[númerosAleatorios];
+        senha = senha + letrasMaiúsculas[numeroAleatorio];
     }
 
-    camposenha.value = semha
+    camposenha.value = senha;
 
 
 }
